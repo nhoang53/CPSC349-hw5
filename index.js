@@ -1,8 +1,8 @@
-var http = require('http');   // import module
+var http = require("http");   // import module
 var fs = require("fs");
 // var path = require('path');
-var extract = require('./extract');
-var mime = require('mime');   // using MIME Type or Media type: npm install mime first
+var extract = require("./extract");
+var mime = require("mime");   // using MIME Type or Media type: npm install mime first
 var ws = require("./websockets-server");
 
 // handling error
@@ -20,7 +20,7 @@ var handleError = function (err, res)
       res.end(data);
     }
   });
- };
+};
 
 var server = http.createServer(function (req, res)
 {
